@@ -4,11 +4,11 @@ import { getDatabase, ref, onValue, set, update } from "https://www.gstatic.com/
 const firebaseConfig = {
   apiKey: "AIzaSyDRHUy9BdhSMuWPC-x_RA9UJ7PNgGGtGfg",
   authDomain: "ospital-56cc0.firebaseapp.com",
-  databaseURL: "https://ospital-56cc0-default-rtdb.firebaseio.com",
   projectId: "ospital-56cc0",
   storageBucket: "ospital-56cc0.firebasestorage.app",
   messagingSenderId: "234588509822",
-  appId: "1:234588509822:web:9442e586a15ce520d76a2f"
+  appId: "1:234588509822:web:9442e586a15ce520d76a2f",
+  databaseURL: "https://ospital-56cc0-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -45,3 +45,4 @@ document.getElementById("nextBedBtn").addEventListener("click", () => {
     inProgress: Math.floor(Math.random() * 10)
   });
 });
+
