@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Bed Sanitation IoT Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Hospital Bed Sanitation IoT Dashboard</h1>
+        <p>Real-time monitoring • Autonomous cleaning • Patient safety first</p>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-card">
+            <h3>Total Beds</h3>
+            <span id="totalBeds">0</span>
+        </div>
+
+        <div class="stat-card green">
+            <h3>Sanitized</h3>
+            <span id="sanitized">0</span>
+        </div>
+
+        <div class="stat-card orange">
+            <h3>Needs Cleaning</h3>
+            <span id="needsCleaning">0</span>
+        </div>
+
+        <div class="stat-card blue">
+            <h3>In Progress</h3>
+            <span id="inProgress">0</span>
+        </div>
+    </section>
+
+    <!-- Bot Section -->
+    <section class="bot-section">
+        <h2>Sanitation Bot</h2>
+        <p>Autonomous cleaning system</p>
+
+        <div class="bot-cards">
+            <div class="bot-card">
+                <h4>Battery</h4>
+                <span id="battery">0%</span>
+            </div>
+
+            <div class="bot-card">
+                <h4>Current Bed</h4>
+                <span id="currentBed">None</span>
+            </div>
+
+            <div class="bot-card">
+                <h4>Status</h4>
+                <span id="botStatus">Idle</span>
+            </div>
+        </div>
+
+        <button id="nextBedBtn" class="main-btn">Send to Next Bed</button>
+    </section>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
